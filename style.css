@@ -3,6 +3,7 @@
     src: url("text/Comfortaa-VariableFont_wght.woff2") format("woff2");
     font-style: normal;
     font-weight: normal;
+    
 }
 
 body {
@@ -10,7 +11,8 @@ body {
     font-family: 'Comfortaa', system-ui, sans-serif;
     box-sizing: border-box;
     /* background-image: url('imgs/black-fon2.jpeg'); */
-    background-color: black;
+    background-color: #111;
+    ;
     color: azure;
 }
 
@@ -54,7 +56,7 @@ p {
 
 .hello {
     width: 80%;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgb(2, 157, 196) 40%);
+    background-image: linear-gradient(0deg, #111 0%, rgb(32, 130, 189) 45%);
     border-radius: 20px;
     display: flex;
     justify-content: left;
@@ -103,35 +105,209 @@ p {
     font-weight: 300;
 }
 
-.progect{
+.progect {
     margin-top: 10vh;
-    display:flex;
+    display: flex;
     flex-direction: column;
     width: 80%;
 }
-.progectTitleText{
+
+.progectTitleText {
     font-size: 3vw;
     z-index: 100;
 }
-.pogectItems{
+
+.pogectItems {
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: row;
     width: 100%;
 }
-.Item1{
+
+.Item1 {
     position: relative;
-    width: 20vw;
+    width: 27vw;
 }
-.Item1Img{
+
+.Item1Img {
     position: relative;
     width: 100%;
-    max-height: 30vh;
+    border-radius: 20px;
 }
-.Item1SubText{
+
+.Item1SubText {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+
+.pogectItems {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+
+}
+
+.ItemImg {
+    width: 27vw;
+    height: auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.pogectItems {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.point {
+    color: white;
+    border: 1px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: azure;
+    padding: 8px 16px 8px 16px;
+    font-weight: 200;
+}
+
+.ItemContainer {
+    width: 27vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+
+}
+
+.item3 {
+    width: 100%;
+}
+
+.item3Img {
+    width: 100%;
+}
+
+.Item3Container {
+    display: flex;
+    flex-direction: row;
+}
+
+.itemtitle {
+    margin: 10px;
+    font-size: medium;
+}
+
+.repBlock {
+    display: flex;
+    margin-top: 20px;
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.leftCol {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.repBlockTitle {
+    font-size: 3vw;
+    margin-top: 20px;
+}
+
+.repBlockText {
+    margin-top: 20px;
+    font-size: 1vw;
+}
+
+.btnGroup {
+    display: flex;
+    margin-top: 20px;
+    font-size: 0.8vw;
+    align-items: center;
+
+}
+
+.repBlockBtn {
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    padding: 15px;
+    font-size: 0.8vw;
+    display: flex;
+    justify-items: center;
+    margin-right: 50px;
+}
+
+.rigthCol {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 2vw;
+}
+
+.borderTB {
+    border-bottom: 1px solid white;
+    padding: 5px;
+}
+.aboutUs{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2vw;
+
+}
+
+.ask{
+    width: 80%;
+    background-color: #111;
+    color: white;
+    font-size: 2vw;
+    font-family: 'Comfortaa', system-ui, sans-serif;
+    border: 1px solid white ;
+    border-left: 0px solid white ;
+    border-right: 0px solid white ;
+
+}
+#item1{
+    display: none;
+    opacity: 0;
+    width: 80%;
+    transition: 1s;
+
+}
+#item2{
+    display: none;
+    width: 80%;
+}
+#item3{
+    display: none;
+    width: 80%;
+}
+#item4{
+    display: none;
+    width: 80%;
+}
+#item5{
+    display: none;
+    width: 80%;
 }
