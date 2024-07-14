@@ -5,7 +5,7 @@ let item4 = window.document.querySelector('#item4')
 let item5 = window.document.querySelector('#item5')
 let item6 = window.document.querySelector('#item6')
 let item7 = window.document.querySelector('#item7')
-let item8 = window.document.querySelector('#item8')
+
 
 let ask1 = window.document.querySelector('#ask1')
 let ask2 = window.document.querySelector('#ask2')
@@ -14,7 +14,7 @@ let ask4 = window.document.querySelector('#ask4')
 let ask5 = window.document.querySelector('#ask5')
 let ask6 = window.document.querySelector('#ask6')
 let ask7 = window.document.querySelector('#ask7')
-let ask8 = window.document.querySelector('#ask8')
+
 const click1 = (event, item) => {
   console.log(item1.style.display)
   console.log(item)
@@ -214,32 +214,5 @@ const click1 = (event, item) => {
       ask7.textContent='+';
     }
   }
-  if (item == 8) {
-    if (item8.style.display == 'none' || item8.style.display == '') {
-      
-      item8.style.display = 'flex';
-      let opacity = 0.3;
-      item8.style.opacity = `${opacity}`;
-      let timerId = setInterval(() => {
-        opacity += 0.05
-        item8.style.opacity = `${opacity}`;
-
-      }, 25);
-      setTimeout(() => { clearInterval(timerId) }, 350);
-
-      ask8.textContent='-';
-      opacity = 0.3;
-      ask8.style.opacity = `${opacity}`;
-      let timerId2 = setInterval(() => {
-        opacity += 0.05
-        ask8.style.opacity = `${opacity}`;
-
-      }, 25);
-      setTimeout(() => { clearInterval(timerId2) }, 350);
-    }
-    else {
-      item8.style.display = 'none';
-      ask8.textContent='+';
-    }
-  }
+  
 }

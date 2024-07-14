@@ -57,7 +57,7 @@ p {
 .hello {
     width: 80%;
     background-image: linear-gradient(0deg, #111 0%, rgb(32, 130, 189) 45%);
-    border-radius: 20px;
+    border-radius: 2vw;
     display: flex;
     justify-content: left;
     flex-direction: row;
@@ -87,7 +87,7 @@ p {
     height: 5vh;
     font-size: 0.7vw;
     background-color: white;
-    border-radius: 30px;
+    border-radius: 2vw;
     cursor: pointer;
 }
 
@@ -112,7 +112,7 @@ p {
     width: 80%;
 }
 
-.progectTitleText {
+.TitleText {
     font-size: 3vw;
     z-index: 100;
 }
@@ -133,8 +133,7 @@ p {
 .Item1Img {
     position: relative;
     width: 100%;
-    border-radius: 20px;
-}
+    border-radius: 2vw;}
 
 .Item1SubText {
     display: flex;
@@ -153,7 +152,7 @@ p {
 .ItemImg {
     width: 27vw;
     height: auto;
-    border-radius: 20px;
+    border-radius: 2vw;
     display: flex;
     flex-direction: column;
 
@@ -177,7 +176,7 @@ p {
     color: white;
     border: 1px;
     border-style: solid;
-    border-radius: 20px;
+    border-radius: 2vw;
     border-color: azure;
     padding: 8px 16px 8px 16px;
     font-weight: 200;
@@ -215,7 +214,7 @@ p {
     display: flex;
     margin-top: 20px;
     background-color: black;
-    border-radius: 20px;
+    border-radius: 2vw;
     padding: 10px 20px;
 }
 
@@ -246,7 +245,7 @@ p {
 .repBlockBtn {
     background-color: black;
     border: 1px solid white;
-    border-radius: 20px;
+    border-radius: 2vw;
     color: white;
     padding: 15px;
     font-size: 0.8vw;
@@ -278,7 +277,7 @@ p {
 }
 
 .ask{
-    margin: 10px 0px;
+    margin: 1vw 0px;
     display: flex;
     justify-content: space-between;
     width: 80%;
@@ -294,47 +293,82 @@ p {
 }
 .answer{
     font-size: 1vw;
+    margin: 0.5vw;
 }
 
 #item1{
     display: none;
     opacity: 0;
     width: 80%;
-    
-
+    flex-direction: column;
+    padding-left:2vw ;
 }
 #item2{
     display: none;
     opacity: 0;
     width: 80%;
+    flex-direction: column;
+    padding-left:2vw ;
 }
 #item3{
     display: none;
     opacity: 0;
     width: 80%;
+    flex-direction: column;
+    padding-left:2vw ;
 }
 #item4{
     display: none;
     opacity: 0;
     width: 80%;
+    flex-direction: column;
+    padding-left:2vw ;
 }
 #item5{
     display: none;
     opacity: 0;
     width: 80%;
+    flex-direction: column;
+    padding-left:2vw ;
 }
 #item6{
     display: none;
     opacity: 0;
     width: 80%;
+    flex-direction: column;
+    padding-left:2vw ;
 }
 #item7{
     display: none;
     opacity: 0;
     width: 80%;
+    flex-direction: column;
+    padding-left:2vw ;
 }
-#item8{
-    display: none;
-    opacity: 0;
-    width: 80%;
+.contacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5vw;
+}
+.contactLeft{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contactRight{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contacImg{
+    width: 70%;
+    border-radius: 2vw;
+}
+.number{
+    display: flex;
+    gap: 2vw;
+    
 }
