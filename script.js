@@ -21,7 +21,7 @@ const click1 = (event, item) => {
 
   if (item == 1) {
     if (item1.style.display == 'none' || item1.style.display == '') {
-      
+
       item1.style.display = 'flex';
       let opacity = 0.3;
       item1.style.opacity = `${opacity}`;
@@ -32,7 +32,7 @@ const click1 = (event, item) => {
       }, 25);
       setTimeout(() => { clearInterval(timerId) }, 350);
 
-      ask1.textContent='-';
+      ask1.textContent = '-';
       opacity = 0.3;
       ask1.style.opacity = `${opacity}`;
       let timerId2 = setInterval(() => {
@@ -44,7 +44,7 @@ const click1 = (event, item) => {
     }
     else {
       item1.style.display = 'none';
-      ask1.textContent='+';
+      ask1.textContent = '+';
     }
   }
   if (item == 2) {
@@ -60,7 +60,7 @@ const click1 = (event, item) => {
       }, 25);
       setTimeout(() => { clearInterval(timerId) }, 350);
 
-      ask2.textContent='-';
+      ask2.textContent = '-';
       opacity = 0.3;
       ask2.style.opacity = `${opacity}`;
       let timerId2 = setInterval(() => {
@@ -74,7 +74,7 @@ const click1 = (event, item) => {
     }
     else {
       item2.style.display = 'none';
-      ask2.textContent='+';
+      ask2.textContent = '+';
     }
   }
   if (item == 3) {
@@ -88,8 +88,8 @@ const click1 = (event, item) => {
 
       }, 25);
       setTimeout(() => { clearInterval(timerId) }, 350);
-      
-      ask3.textContent='-';
+
+      ask3.textContent = '-';
       opacity = 0.3;
       ask3.style.opacity = `${opacity}`;
       let timerId2 = setInterval(() => {
@@ -101,7 +101,7 @@ const click1 = (event, item) => {
     }
     else {
       item3.style.display = 'none';
-      ask3.textContent='+';
+      ask3.textContent = '+';
     }
   }
   if (item == 4) {
@@ -116,7 +116,7 @@ const click1 = (event, item) => {
       }, 25);
       setTimeout(() => { clearInterval(timerId) }, 350);
 
-      ask4.textContent='-';
+      ask4.textContent = '-';
       opacity = 0.3;
       ask4.style.opacity = `${opacity}`;
       let timerId2 = setInterval(() => {
@@ -128,7 +128,7 @@ const click1 = (event, item) => {
     }
     else {
       item4.style.display = 'none';
-      ask4.textContent='+';
+      ask4.textContent = '+';
     }
   }
   if (item == 5) {
@@ -143,7 +143,7 @@ const click1 = (event, item) => {
       }, 25);
       setTimeout(() => { clearInterval(timerId) }, 350);
 
-      ask5.textContent='-';
+      ask5.textContent = '-';
       opacity = 0.3;
       ask5.style.opacity = `${opacity}`;
       let timerId2 = setInterval(() => {
@@ -155,12 +155,12 @@ const click1 = (event, item) => {
     }
     else {
       item5.style.display = 'none';
-      ask5.textContent='+';
+      ask5.textContent = '+';
     }
   }
   if (item == 6) {
     if (item6.style.display == 'none' || item6.style.display == '') {
-      
+
       item6.style.display = 'flex';
       let opacity = 0.3;
       item6.style.opacity = `${opacity}`;
@@ -171,7 +171,7 @@ const click1 = (event, item) => {
       }, 25);
       setTimeout(() => { clearInterval(timerId) }, 350);
 
-      ask6.textContent='-';
+      ask6.textContent = '-';
       opacity = 0.3;
       ask6.style.opacity = `${opacity}`;
       let timerId2 = setInterval(() => {
@@ -183,12 +183,12 @@ const click1 = (event, item) => {
     }
     else {
       item6.style.display = 'none';
-      ask6.textContent='+';
+      ask6.textContent = '+';
     }
   }
   if (item == 7) {
     if (item7.style.display == 'none' || item7.style.display == '') {
-      
+
       item7.style.display = 'flex';
       let opacity = 0.3;
       item7.style.opacity = `${opacity}`;
@@ -199,7 +199,7 @@ const click1 = (event, item) => {
       }, 25);
       setTimeout(() => { clearInterval(timerId) }, 350);
 
-      ask7.textContent='-';
+      ask7.textContent = '-';
       opacity = 0.3;
       ask7.style.opacity = `${opacity}`;
       let timerId2 = setInterval(() => {
@@ -211,8 +211,53 @@ const click1 = (event, item) => {
     }
     else {
       item7.style.display = 'none';
-      ask7.textContent='+';
+      ask7.textContent = '+';
     }
   }
-  
+
 }
+let count = 0
+window.addEventListener('scroll', function (event) { // событие, которое отслеживает прокрутку
+
+  let element = document.getElementById('demo');
+  let rect = element.getBoundingClientRect();
+  // console.log(-(this.window.innerHeight) * 2 / 3, rect.top , (this.window.innerHeight) * 2 / 3)
+
+
+  if (count == 0 && (this.window.innerHeight) / 10 <= rect.top && rect.top <= (this.window.innerHeight)) {
+    count = 1
+    console.log("start")
+    WriteText('hello world ащалеееееееееееееееть',"demo",0)
+
+
+  }
+
+
+
+})
+
+
+
+function WriteText(text, id, i) {
+  console.log(i, text.charAt(i))
+  let txt = String(text); /* Текст */
+  const speed = 100;/* Скорость/длительность эффекта в миллисекундах */
+  if (i < txt.length) {
+    document.getElementById(String(id)).innerHTML += txt.charAt(i);
+    i++;
+     setTimeout(WriteText, 100,text, id, i); //функция,скорость,аргументы в функцию
+  }
+}
+
+
+// var i = 0;
+// var txt = 'Lorem ipsum typing effect!'; /* Текст */
+// var speed = 50; /* Скорость/длительность эффекта в миллисекундах */
+
+// function typeWriter() {
+//   if (i < txt.length) {
+//     document.getElementById("demo").innerHTML += txt.charAt(i);
+//     i++;
+//     setTimeout(typeWriter, speed);
+//   }
+// }

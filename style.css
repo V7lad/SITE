@@ -3,7 +3,7 @@
     src: url("text/Comfortaa-VariableFont_wght.woff2") format("woff2");
     font-style: normal;
     font-weight: normal;
-    
+
 }
 
 body {
@@ -12,7 +12,7 @@ body {
     box-sizing: border-box;
     /* background-image: url('imgs/black-fon2.jpeg'); */
     background-color: #111;
-    
+
     color: white;
 }
 
@@ -56,6 +56,8 @@ p {
 
 .hello {
     width: 80%;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-image: linear-gradient(0deg, #111 0%, rgb(32, 130, 189) 45%);
     border-radius: 2vw;
     display: flex;
@@ -75,6 +77,8 @@ p {
 
 .helloImg {
     width: 25vw;
+    max-height: 70vh;
+
     position: absolute;
     z-index: 100;
     right: 4vw;
@@ -105,6 +109,26 @@ p {
     font-weight: 300;
 }
 
+.greating {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 100%;
+}   
+
+.greatingImg {
+    width: 15vw;
+}
+.greatingText{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
 .progect {
     margin-top: 10vh;
     display: flex;
@@ -133,7 +157,8 @@ p {
 .Item1Img {
     position: relative;
     width: 100%;
-    border-radius: 2vw;}
+    border-radius: 2vw;
+}
 
 .Item1SubText {
     display: flex;
@@ -266,7 +291,8 @@ p {
     border-bottom: 1px solid white;
     padding: 5px;
 }
-.aboutUs{
+
+.aboutUs {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -276,7 +302,7 @@ p {
     margin-top: 30px;
 }
 
-.ask{
+.ask {
     margin: 1vw 0px;
     display: flex;
     justify-content: space-between;
@@ -285,90 +311,102 @@ p {
     color: white;
     font-size: 2vw;
     font-family: 'Comfortaa', system-ui, sans-serif;
-    border: 1px solid white ;
-    border-top: 0px solid white ;
-    border-right: 0px solid white ;
-    border-left: 0px solid white ;
+    border: 1px solid white;
+    border-top: 0px solid white;
+    border-right: 0px solid white;
+    border-left: 0px solid white;
 
 }
-.answer{
+
+.answer {
     font-size: 1vw;
     margin: 0.5vw;
 }
 
-#item1{
+#item1 {
     display: none;
     opacity: 0;
     width: 80%;
     flex-direction: column;
-    padding-left:2vw ;
+    padding-left: 2vw;
 }
-#item2{
+
+#item2 {
     display: none;
     opacity: 0;
     width: 80%;
     flex-direction: column;
-    padding-left:2vw ;
+    padding-left: 2vw;
 }
-#item3{
+
+#item3 {
     display: none;
     opacity: 0;
     width: 80%;
     flex-direction: column;
-    padding-left:2vw ;
+    padding-left: 2vw;
 }
-#item4{
+
+#item4 {
     display: none;
     opacity: 0;
     width: 80%;
     flex-direction: column;
-    padding-left:2vw ;
+    padding-left: 2vw;
 }
-#item5{
+
+#item5 {
     display: none;
     opacity: 0;
     width: 80%;
     flex-direction: column;
-    padding-left:2vw ;
+    padding-left: 2vw;
 }
-#item6{
+
+#item6 {
     display: none;
     opacity: 0;
     width: 80%;
     flex-direction: column;
-    padding-left:2vw ;
+    padding-left: 2vw;
 }
-#item7{
+
+#item7 {
     display: none;
     opacity: 0;
     width: 80%;
     flex-direction: column;
-    padding-left:2vw ;
+    padding-left: 2vw;
 }
-.contacts{
+
+.contacts {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 5vw;
 }
-.contactLeft{
+
+.contactLeft {
     width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.contactRight{
+
+.contactRight {
     width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.contacImg{
+
+.contacImg {
     width: 70%;
     border-radius: 2vw;
 }
-.number{
+
+.number {
     display: flex;
     gap: 2vw;
-    
+
 }
