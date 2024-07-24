@@ -218,17 +218,13 @@ const click1 = (event, item) => {
 }
 let count = 0
 window.addEventListener('scroll', function (event) { // событие, которое отслеживает прокрутку
-
-  let element = document.getElementById('demo');
-  let rect = element.getBoundingClientRect();
-  // console.log(-(this.window.innerHeight) * 2 / 3, rect.top , (this.window.innerHeight) * 2 / 3)
+  let elementWrite1 = document.getElementById('greatingText');
+  let viewElementWrite1 = elementWrite1.getBoundingClientRect();
 
 
-  if (count == 0 && (this.window.innerHeight) / 10 <= rect.top && rect.top <= (this.window.innerHeight)) {
+  if (count == 0 && (this.window.innerHeight) / 10 <= viewElementWrite1.top && viewElementWrite1.top <= (this.window.innerHeight)) {
     count = 1
-    console.log("start")
-    WriteText('hello world ащалеееееееееееееееть',"demo",0)
-
+    WriteText(' Здравствуйте! Меня зовут Сас Владислав, и я являюсь репетитором по математике и компьютерным наукам. Я помогаю своим ученикам улучшить оценки, подготовиться к экзаменам и поступлению в ведущие вузы страны.',"greatingText",0)
 
   }
 
@@ -241,11 +237,11 @@ window.addEventListener('scroll', function (event) { // событие, кото
 function WriteText(text, id, i) {
   console.log(i, text.charAt(i))
   let txt = String(text); /* Текст */
-  const speed = 100;/* Скорость/длительность эффекта в миллисекундах */
+  const speed = 40;/* Скорость/длительность эффекта в миллисекундах */
   if (i < txt.length) {
     document.getElementById(String(id)).innerHTML += txt.charAt(i);
     i++;
-     setTimeout(WriteText, 100,text, id, i); //функция,скорость,аргументы в функцию
+    setTimeout(WriteText, speed,text, id, i); //функция,скорость,аргументы в функцию
   }
 }
 
