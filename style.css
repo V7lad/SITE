@@ -53,27 +53,32 @@ p {
     align-items: center;
     flex-direction: column;
 }
-.img{
+
+.img {
     width: 15vw;
 }
-.firstScreen{
-    width:100vw;
+
+.firstScreen {
+    width: 100vw;
     max-height: 50vh;
     display: flex;
 }
 
-.hi{
+.hi {
     display: flex;
-   
+
 }
-.hiText{
+
+.hiText {
     width: 50vw;
 }
-.hiImg{
+
+.hiImg {
     height: 100vh;
     display: flex;
     justify-self: end;
 }
+
 .hello {
     width: 80%;
     background-size: contain;
@@ -93,7 +98,7 @@ p {
     justify-content: center;
     flex-direction: column;
     width: 80%;
-    padding-left: 2vw ;
+    padding-left: 2vw;
 }
 
 .helloImg {
@@ -139,19 +144,20 @@ p {
     flex-wrap: wrap;
     min-height: 20vw;
     width: 80vw;
-    background-image: linear-gradient(#111, #11111100),linear-gradient(0deg, #111 0%, #11111100 70%),
-                  url("imgs/stairs.png");
-    background-repeat: no-repeat;
+    background-image: linear-gradient(#111, #11111100), linear-gradient(0deg, #111 0%, #11111100 70%),
+        url("imgs/stairs.png");
+    background-repeat: repeat;
     background-attachment: fixed;
-    background-position: right; 
+    background-position: right;
     background-size: cover;
     margin-top: 3vw;
-}   
+}
 
 .greatingImg {
     width: 15vw;
 }
-#greatingText{
+
+#greatingText {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -173,6 +179,11 @@ p {
 .TitleText {
     font-size: 3vw;
     z-index: 100;
+}
+
+.text {
+    font-size: 1vw;
+    margin: 1vw;
 }
 
 .pogectItems {
@@ -271,10 +282,9 @@ p {
 
 .repBlock {
     display: flex;
-    margin-top: 20px;
     background-color: black;
     border-radius: 2vw;
-    padding: 10px 20px;
+    padding: 2vw;
 }
 
 .leftCol {
@@ -314,6 +324,7 @@ p {
 }
 
 .rigthCol {
+    margin-left: 3vw;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -324,6 +335,114 @@ p {
 .borderTB {
     border-bottom: 1px solid white;
     padding: 5px;
+}
+
+
+.aboutMe {
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutMeImg {
+    height: 25vw;
+    border-radius: 1vw;
+}
+
+.calculator {
+    margin: 5vw;
+    width: 80vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.calculatorNames{
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    flex-direction: row;
+    top: 0;
+}
+.calculatorItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 15vw;
+
+}
+/* .calculatorBtnHolder{
+    display: flex;
+    align-items: c;
+} */
+.calculatorBtn {
+    margin: 0.5vw;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    height: 3vw;
+    display: flex`;
+    align-self: center;
+    font-size: 1vw;
+    font-family: 'Comfortaa', system-ui, sans-serif;
+    cursor: pointer;
+}
+
+
+.calculatorBtn:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.calculatorBtn:active {
+    color: #000
+}
+
+.calculatorBtn:active:after {
+    background: transparent;
+}
+
+.calculatorBtn:hover:before {
+    opacity: 1;
+}
+
+.calculatorBtn:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
 }
 
 .aboutUs {
