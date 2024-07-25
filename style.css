@@ -157,6 +157,7 @@ p {
     width: 15vw;
 }
 
+
 #greatingText {
     width: 100%;
     display: flex;
@@ -282,7 +283,6 @@ p {
 
 .repBlock {
     display: flex;
-    background-color: black;
     border-radius: 2vw;
     padding: 2vw;
 }
@@ -312,7 +312,7 @@ p {
 }
 
 .repBlockBtn {
-    background-color: black;
+    background-color: #111;
     border: 1px solid white;
     border-radius: 2vw;
     color: white;
@@ -339,11 +339,15 @@ p {
 
 
 .aboutMe {
+    background-color: whitesmoke;
+    color: black;
     margin-top: 3vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
 }
 
 .aboutMeImg {
@@ -352,11 +356,26 @@ p {
 }
 
 .calculator {
-    margin: 5vw;
+    height: 20vw;
     width: 80vw;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #111;
+    border-radius: 20px;
+
+
+}
+
+.calculatorHolder {
+    margin-top: 2vw;
+    align-items: normal;
+    background-color: #111;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
 }
 
@@ -370,12 +389,14 @@ p {
     font-size: 1.2vw;
     top: 0;
 }
-.calculatorName{
+
+.calculatorName {
     width: 15vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
 .calculatorItem {
     height: 15vw;
 
@@ -389,7 +410,8 @@ p {
 
 .calculatorBtn {
     visibility: visible;
-    margin: 0.5vw;
+    margin-top: 0.5vw;
+    width: 15vw;
     border: none;
     outline: none;
     color: #fff;
