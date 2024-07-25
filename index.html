@@ -96,40 +96,34 @@
         </div>
         <div class="calculator">
             <div class="calculatorNames">
-                <p>Вариант занятия:</p>
-                <p>Вариант занятия:</p>
-                <p>Вариант занятия:</p>
-                <p>Вариант занятия:</p>
-                <p>Вариант занятия:</p>
+                <p class="calculatorName">Тип:</p>
+                <p class="calculatorName">Формат:</p>
+                <p class="calculatorName">Предмет:</p>
+                <p class="calculatorName">Направление:</p>
+                <p class="calculatorName">Цена:</p>
             </div>
             <div class="calculatorType calculatorItem">
-                
-
-
-                <button class="calculatorBtn" onclick="calculatorBtn1"> Персональные</button>
-                <button class="calculatorBtn" onclick="calculatorBtn1"> Групповые</button>
-
-
+                <button type="submit" class="calculatorBtn" onclick="clickCalculatorBtn(11)" id ='calculatorBtn1_1'> Персональные</button>
+                <button type="submit" class="calculatorBtn" onclick="clickCalculatorBtn(12)" id ='calculatorBtn1_2'> Групповые</button>
             </div>
             <div class="calculatorFormat calculatorItem">
-                
-                <button class="calculatorBtn" onclick="calculatorBtn1"> Дистанционно</button>
-                <button class="calculatorBtn" onclick="calculatorBtn1"> Очно</button>
+                <button type="submit" class="calculatorBtn" onclick="clickCalculatorBtn(21)" id ='calculatorBtn2_1'> Дистанционно</button>
+                <button type="submit" class="calculatorBtn" onclick="clickCalculatorBtn(22)" id ='calculatorBtn2_2'> Очно</button>
             </div>
             <div class="calculatorSubject calculatorItem">
                 
-                <button class="calculatorBtn"> Математика</button>
-                <button class="calculatorBtn"> Информатика</button>
+                <button class="calculatorBtn" onclick="clickCalculatorBtn(31)" id ='calculatorBtn3_1'> Математика</button>
+                <button class="calculatorBtn" onclick="clickCalculatorBtn(32)" id ='calculatorBtn3_2'> Информатика</button>
             </div>
             <div class="calculatorWork calculatorItem">
                 
-                <button class="calculatorBtn"> ЕГЭ</button>
-                <button class="calculatorBtn"> ОГЭ</button>
-                <button class="calculatorBtn"> Олимпиады</button>
-                <button class="calculatorBtn"> Повышение успеваемости</button>
+                <button class="calculatorBtn" onclick="clickCalculatorBtn(41)" id ='calculatorBtn4_1'> ЕГЭ</button>
+                <button class="calculatorBtn" onclick="clickCalculatorBtn(42)" id ='calculatorBtn4_2'> ОГЭ</button>
+                <button class="calculatorBtn" onclick="clickCalculatorBtn(43)" id ='calculatorBtn4_3'> Олимпиады</button>
+                <button class="calculatorBtn" onclick="clickCalculatorBtn(44)" id ='calculatorBtn4_4'> Повышение успеваемости</button>
             </div>
             <div class="calculatorPrice calculatorItem">
-                <p>800р</p>
+                <p id="price"></p>
             </div>
 
         </div>
