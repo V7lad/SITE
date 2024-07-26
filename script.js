@@ -255,6 +255,7 @@ function WriteText(text, id, i = 0, speed = 40) {
     document.getElementById(String(id)).innerHTML += txt.charAt(i);
     i++;
     setTimeout(WriteText, speed, text, id, i); //функция,скорость,аргументы в функцию
+    
   }
 }
 
@@ -422,12 +423,194 @@ function clickCalculatorBtn(id) {
 
   }
   console.log(b1, b2, b3, b4)
+
   if (b1 != 0 && b2 != 0 && b3 != 0 && b4 != 0) {
-    WriteText('1000 rub', 'price', 0,1)
+    price.innerHTML = '';
+
+
+    // перс дист мат ...
+    if (b1 == 1 && b2 == 1 && b3 == 1 && b4 == 1){
+      WriteText('1000 rub', 'price', 0, 1)
+      price.focus()
+    }
+    if (b1 == 1 && b2 == 1 && b3 == 1 && b4 == 2){
+      WriteText('700 rub', 'price', 0, 1)
+      price.focus()
+    }
+    if (b1 == 1 && b2 == 1 && b3 == 1 && b4 == 3){
+      WriteText('2500 rub', 'price', 0, 1)
+      price.focus()
+    }
+    if (b1 == 1 && b2 == 1 && b3 == 1 && b4 == 4){
+      WriteText('700 rub', 'price', 0, 1)
+      price.focus()
+    }
+    // перс дист инф ...
+    if (b1 == 1 && b2 == 1 && b3 == 2 && b4 == 1){
+      WriteText('1000 rub', 'price', 0, 1)
+      price.focus()
+    }
+    if (b1 == 1 && b2 == 1 && b3 == 2 && b4 == 2){
+      WriteText('700 rub', 'price', 0, 1)
+      price.focus()
+    }
+    if (b1 == 1 && b2 == 1 && b3 == 2 && b4 == 3){
+      WriteText('2000 rub', 'price', 0, 1)
+      price.focus()
+    }
+    if (b1 == 1 && b2 == 1 && b3 == 2 && b4 == 4){
+      WriteText('700 rub', 'price', 0, 1)
+      price.focus()
+    }
+
+    // перс очн мат ...
+    if (b1 == 1 && b2 == 2 && b3 == 1 && b4 == 1){
+      WriteText('1100 rub', 'price', 0, 1)
+      price.focus()
+    }
+    if (b1 == 1 && b2 == 2 && b3 == 1 && b4 == 2){
+      WriteText('800 rub', 'price', 0, 1)
+      price.focus()
+    }
+    if (b1 == 1 && b2 == 2 && b3 == 1 && b4 == 3){
+      WriteText('2600 rub', 'price', 0, 1)
+      price.focus()
+    }
+    if (b1 == 1 && b2 == 2 && b3 == 1 && b4 == 4){
+      WriteText('800 rub', 'price', 0, 1)
+      price.focus()
+    }
+    // перс очн инф ...
+    if (b1 == 1 && b2 == 2 && b3 == 2 && b4 == 1){
+      WriteText('1100 rub', 'price', 0, 1)
+      price.focus()
+    }
+    if (b1 == 1 && b2 == 2 && b3 == 2 && b4 == 2){
+      WriteText('800 rub', 'price', 0, 1)
+      price.focus()
+    }
+    if (b1 == 1 && b2 == 2 && b3 == 2 && b4 == 3){
+      WriteText('2100 rub', 'price', 0, 1)
+      price.focus()
+    }
+    if (b1 == 1 && b2 == 2 && b3 == 2 && b4 == 4){
+      WriteText('800 rub', 'price', 0, 1)
+      price.focus()
+    }
+
+
+    
+    
+    // груп дист мат ...
+    if (b1 == 2 && b2 == 1 && b3 == 1 && b4 == 1){
+      WriteText('350 rub', 'price', 0, 1)
+      price.focus()
+    }
+    if (b1 == 2 && b2 == 1 && b3 == 1 && b4 == 2){
+      WriteText('300 rub', 'price', 0, 1)
+      price.focus()
+    }
+    if (b1 == 2 && b2 == 1 && b3 == 1 && b4 == 3){
+      WriteText('Только персональные занятия', 'price', 0, 1)
+      price.focus()
+    }
+    if (b1 == 2 && b2 == 1 && b3 == 1 && b4 == 4){
+      WriteText('300', 'price', 0, 1)
+      price.focus()
+    }
+    // груп дист инф ...
+    if (b1 == 2 && b2 == 1 && b3 == 2 && b4 == 1){
+      WriteText('350 rub', 'price', 0, 1)
+      price.focus()
+    }
+    if (b1 == 2 && b2 == 1 && b3 == 2 && b4 == 2){
+      WriteText('300 rub', 'price', 0, 1)
+      price.focus()
+    }
+    if (b1 == 2 && b2 == 1 && b3 == 2 && b4 == 3){
+      WriteText('Только персональные занятия', 'price', 0, 1)
+      price.focus()
+    }
+    if (b1 == 2 && b2 == 1 && b3 == 2 && b4 == 4){
+      WriteText('300', 'price', 0, 1)
+      price.focus()
+    }
+
+    // груп очн мат ...
+    if (b1 == 2 && b2 == 2 && b3 == 1 && b4 == 1){
+      WriteText('450', 'price', 0, 1)
+      price.focus()
+    }
+    if (b1 == 2 && b2 == 2 && b3 == 1 && b4 == 2){
+      WriteText('400 rub', 'price', 0, 1)
+      price.focus()
+    }
+    if (b1 == 2 && b2 == 2 && b3 == 1 && b4 == 3){
+      WriteText('Только персональные занятия', 'price', 0, 1)
+      price.focus()
+    }
+    if (b1 == 2 && b2 == 2 && b3 == 1 && b4 == 4){
+      WriteText('400', 'price', 0, 1)
+      price.focus()
+    }
+    // гру2 очн инф ...
+    if (b1 == 2 && b2 == 2 && b3 == 2 && b4 == 1){
+      WriteText('450 rub', 'price', 0, 1)
+      price.focus()
+    }
+    if (b1 == 2 && b2 == 2 && b3 == 2 && b4 == 2){
+      WriteText('400 rub', 'price', 0, 1)
+      price.focus()
+    }
+    if (b1 == 2 && b2 == 2 && b3 == 2 && b4 == 3){
+      WriteText('Только персональные занятия', 'price', 0, 1)
+      price.focus()
+    }
+    if (b1 == 2 && b2 == 2 && b3 == 2 && b4 == 4){
+      WriteText('400', 'price', 0, 1)
+      price.focus()
+    }
   }
-  else{
-    price.innerHTML='';
+  else {
+    price.innerHTML = '';
+    let k = 0;
+    if (b1 != 0) {
+      k += 1
+    }
+    if (b2 != 0) {
+      k += 1
+    }
+    if (b3 != 0) {
+      k += 1
+    }
+    if (b4 != 0) {
+      k += 1
+    }
+    if (k == 1) {
+      price.innerHTML =`выберите ${4-k} пункта`;
+      pric2.focus()
+
+    }
+    if (k == 2 ) {
+      price.innerHTML =`выберите ${4-k} пункта`;
+      price.focus()
+
+    }
+    if( k == 3 ) {
+      price.innerHTML =`выберите ${4-k} пункт`;
+      price.focus()
+
+    }
+    if( k == 0 ) {
+      price.innerHTML =`выберите ${4-k} пункта`;
+      price.focus()
+
+    }
+
   }
+
+
+
 }
 
 
