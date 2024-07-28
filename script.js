@@ -28,6 +28,7 @@ let btn4_4 = window.document.querySelector('#calculatorBtn4_4')
 
 let price = window.document.querySelector('#price')
 
+let HelpText = window.document.querySelector('#HelpText')
 
 const click1 = (event, item) => {
   console.log(item1.style.display)
@@ -230,29 +231,31 @@ const click1 = (event, item) => {
   }
 
 }
-// если надо будет при скроле 
-// let count = 0
-// window.addEventListener('scroll', function (event) { // событие, которое отслеживает прокрутку
-//   let elementWrite1 = document.getElementById('greatingText');
-//   let viewElementWrite1 = elementWrite1.getBoundingClientRect();
+
+let count = 0
+window.addEventListener('scroll', function (event) { // событие, которое отслеживает прокрутку
+  let elementWrite1 = document.getElementById('HelpText');
+  let viewElementWrite1 = elementWrite1.getBoundingClientRect();
 
 
-//   if (count == 0 && (this.window.innerHeight) / 10 <= viewElementWrite1.top && viewElementWrite1.top <= (this.window.innerHeight)) {
-//     count = 1
-//     WriteText(' Здравствуйте! Меня зовут Сас Владислав, и я являюсь репетитором по математике и компьютерным наукам. Я помогаю своим ученикам улучшить оценки, подготовиться к экзаменам и поступлению в ведущие вузы страны.', "greatingText", 0)
+  if (count == 0 && (this.window.innerHeight) / 10 <= viewElementWrite1.top && viewElementWrite1.top <= (this.window.innerHeight)) {
+    count = 1
+    for (var i = 0; i <=10; i++) {
+      setTimeout(HelpTextVision, i*100);
+  }
+    
+  }
 
-//   }
 
 
-
-// })
-
-setTimeout(WriteText,1000,' Здравствуйте!', "greatingText1", 0);
-setTimeout(WriteText,2500,'  Меня зовут Сас Владислав, и я являюсь репетитором по математике и компьютерным наукам.', "greatingText2", 0);
-setTimeout(WriteText,6000,'  Я помогаю своим ученикам улучшить оценки, подготовиться к экзаменам и поступлению в ведущие вузы страны.', "greatingText3", 0);
-WriteText('', "greatingText", 0)
-setTimeout(typeWriter, speed);
-WriteText('', "greatingText", 0)
+})
+let op=0;
+function HelpTextVision (){
+  let Helptext = document.getElementById('HelpText');
+  console.log(Helptext.style.opacity)
+  op+=0.1;
+  Helptext.style.opacity = `${op}`;
+}
 
 
 
@@ -263,7 +266,7 @@ function WriteText(text, id, i = 0, speed = 40) {
     document.getElementById(String(id)).innerHTML += txt.charAt(i);
     i++;
     setTimeout(WriteText, speed, text, id, i); //функция,скорость,аргументы в функцию
-    
+
   }
 }
 
@@ -437,144 +440,144 @@ function clickCalculatorBtn(id) {
 
 
     // перс дист мат ...
-    if (b1 == 1 && b2 == 1 && b3 == 1 && b4 == 1){
+    if (b1 == 1 && b2 == 1 && b3 == 1 && b4 == 1) {
       WriteText('1000 rub', 'price', 0, 1)
       price.focus()
     }
-    if (b1 == 1 && b2 == 1 && b3 == 1 && b4 == 2){
+    if (b1 == 1 && b2 == 1 && b3 == 1 && b4 == 2) {
       WriteText('700 rub', 'price', 0, 1)
       price.focus()
     }
-    if (b1 == 1 && b2 == 1 && b3 == 1 && b4 == 3){
+    if (b1 == 1 && b2 == 1 && b3 == 1 && b4 == 3) {
       WriteText('2500 rub', 'price', 0, 1)
       price.focus()
     }
-    if (b1 == 1 && b2 == 1 && b3 == 1 && b4 == 4){
+    if (b1 == 1 && b2 == 1 && b3 == 1 && b4 == 4) {
       WriteText('700 rub', 'price', 0, 1)
       price.focus()
     }
     // перс дист инф ...
-    if (b1 == 1 && b2 == 1 && b3 == 2 && b4 == 1){
+    if (b1 == 1 && b2 == 1 && b3 == 2 && b4 == 1) {
       WriteText('1000 rub', 'price', 0, 1)
       price.focus()
     }
-    if (b1 == 1 && b2 == 1 && b3 == 2 && b4 == 2){
+    if (b1 == 1 && b2 == 1 && b3 == 2 && b4 == 2) {
       WriteText('700 rub', 'price', 0, 1)
       price.focus()
     }
-    if (b1 == 1 && b2 == 1 && b3 == 2 && b4 == 3){
+    if (b1 == 1 && b2 == 1 && b3 == 2 && b4 == 3) {
       WriteText('2000 rub', 'price', 0, 1)
       price.focus()
     }
-    if (b1 == 1 && b2 == 1 && b3 == 2 && b4 == 4){
+    if (b1 == 1 && b2 == 1 && b3 == 2 && b4 == 4) {
       WriteText('700 rub', 'price', 0, 1)
       price.focus()
     }
 
     // перс очн мат ...
-    if (b1 == 1 && b2 == 2 && b3 == 1 && b4 == 1){
+    if (b1 == 1 && b2 == 2 && b3 == 1 && b4 == 1) {
       WriteText('1100 rub', 'price', 0, 1)
       price.focus()
     }
-    if (b1 == 1 && b2 == 2 && b3 == 1 && b4 == 2){
+    if (b1 == 1 && b2 == 2 && b3 == 1 && b4 == 2) {
       WriteText('800 rub', 'price', 0, 1)
       price.focus()
     }
-    if (b1 == 1 && b2 == 2 && b3 == 1 && b4 == 3){
+    if (b1 == 1 && b2 == 2 && b3 == 1 && b4 == 3) {
       WriteText('2600 rub', 'price', 0, 1)
       price.focus()
     }
-    if (b1 == 1 && b2 == 2 && b3 == 1 && b4 == 4){
+    if (b1 == 1 && b2 == 2 && b3 == 1 && b4 == 4) {
       WriteText('800 rub', 'price', 0, 1)
       price.focus()
     }
     // перс очн инф ...
-    if (b1 == 1 && b2 == 2 && b3 == 2 && b4 == 1){
+    if (b1 == 1 && b2 == 2 && b3 == 2 && b4 == 1) {
       WriteText('1100 rub', 'price', 0, 1)
       price.focus()
     }
-    if (b1 == 1 && b2 == 2 && b3 == 2 && b4 == 2){
+    if (b1 == 1 && b2 == 2 && b3 == 2 && b4 == 2) {
       WriteText('800 rub', 'price', 0, 1)
       price.focus()
     }
-    if (b1 == 1 && b2 == 2 && b3 == 2 && b4 == 3){
+    if (b1 == 1 && b2 == 2 && b3 == 2 && b4 == 3) {
       WriteText('2100 rub', 'price', 0, 1)
       price.focus()
     }
-    if (b1 == 1 && b2 == 2 && b3 == 2 && b4 == 4){
+    if (b1 == 1 && b2 == 2 && b3 == 2 && b4 == 4) {
       WriteText('800 rub', 'price', 0, 1)
       price.focus()
     }
 
 
-    
-    
+
+
     // груп дист мат ...
-    if (b1 == 2 && b2 == 1 && b3 == 1 && b4 == 1){
+    if (b1 == 2 && b2 == 1 && b3 == 1 && b4 == 1) {
       WriteText('350 rub', 'price', 0, 1)
       price.focus()
     }
-    if (b1 == 2 && b2 == 1 && b3 == 1 && b4 == 2){
+    if (b1 == 2 && b2 == 1 && b3 == 1 && b4 == 2) {
       WriteText('300 rub', 'price', 0, 1)
       price.focus()
     }
-    if (b1 == 2 && b2 == 1 && b3 == 1 && b4 == 3){
+    if (b1 == 2 && b2 == 1 && b3 == 1 && b4 == 3) {
       WriteText('Только персональные занятия', 'price', 0, 1)
       price.focus()
     }
-    if (b1 == 2 && b2 == 1 && b3 == 1 && b4 == 4){
+    if (b1 == 2 && b2 == 1 && b3 == 1 && b4 == 4) {
       WriteText('300', 'price', 0, 1)
       price.focus()
     }
     // груп дист инф ...
-    if (b1 == 2 && b2 == 1 && b3 == 2 && b4 == 1){
+    if (b1 == 2 && b2 == 1 && b3 == 2 && b4 == 1) {
       WriteText('350 rub', 'price', 0, 1)
       price.focus()
     }
-    if (b1 == 2 && b2 == 1 && b3 == 2 && b4 == 2){
+    if (b1 == 2 && b2 == 1 && b3 == 2 && b4 == 2) {
       WriteText('300 rub', 'price', 0, 1)
       price.focus()
     }
-    if (b1 == 2 && b2 == 1 && b3 == 2 && b4 == 3){
+    if (b1 == 2 && b2 == 1 && b3 == 2 && b4 == 3) {
       WriteText('Только персональные занятия', 'price', 0, 1)
       price.focus()
     }
-    if (b1 == 2 && b2 == 1 && b3 == 2 && b4 == 4){
+    if (b1 == 2 && b2 == 1 && b3 == 2 && b4 == 4) {
       WriteText('300', 'price', 0, 1)
       price.focus()
     }
 
     // груп очн мат ...
-    if (b1 == 2 && b2 == 2 && b3 == 1 && b4 == 1){
+    if (b1 == 2 && b2 == 2 && b3 == 1 && b4 == 1) {
       WriteText('450', 'price', 0, 1)
       price.focus()
     }
-    if (b1 == 2 && b2 == 2 && b3 == 1 && b4 == 2){
+    if (b1 == 2 && b2 == 2 && b3 == 1 && b4 == 2) {
       WriteText('400 rub', 'price', 0, 1)
       price.focus()
     }
-    if (b1 == 2 && b2 == 2 && b3 == 1 && b4 == 3){
+    if (b1 == 2 && b2 == 2 && b3 == 1 && b4 == 3) {
       WriteText('Только персональные занятия', 'price', 0, 1)
       price.focus()
     }
-    if (b1 == 2 && b2 == 2 && b3 == 1 && b4 == 4){
+    if (b1 == 2 && b2 == 2 && b3 == 1 && b4 == 4) {
       WriteText('400', 'price', 0, 1)
       price.focus()
     }
     // гру2 очн инф ...
-    if (b1 == 2 && b2 == 2 && b3 == 2 && b4 == 1){
+    if (b1 == 2 && b2 == 2 && b3 == 2 && b4 == 1) {
       WriteText('450 rub', 'price', 0, 1)
       price.focus()
     }
-    if (b1 == 2 && b2 == 2 && b3 == 2 && b4 == 2){
+    if (b1 == 2 && b2 == 2 && b3 == 2 && b4 == 2) {
       WriteText('400 rub', 'price', 0, 1)
       price.focus()
     }
-    if (b1 == 2 && b2 == 2 && b3 == 2 && b4 == 3){
+    if (b1 == 2 && b2 == 2 && b3 == 2 && b4 == 3) {
       WriteText('Только персональные занятия', 'price', 0, 1)
       price.focus()
     }
-    if (b1 == 2 && b2 == 2 && b3 == 2 && b4 == 4){
+    if (b1 == 2 && b2 == 2 && b3 == 2 && b4 == 4) {
       WriteText('400', 'price', 0, 1)
       price.focus()
     }
@@ -595,22 +598,22 @@ function clickCalculatorBtn(id) {
       k += 1
     }
     if (k == 1) {
-      price.innerHTML =`выберите ${4-k} пункта`;
+      price.innerHTML = `выберите ${4 - k} пункта`;
       pric2.focus()
 
     }
-    if (k == 2 ) {
-      price.innerHTML =`выберите ${4-k} пункта`;
+    if (k == 2) {
+      price.innerHTML = `выберите ${4 - k} пункта`;
       price.focus()
 
     }
-    if( k == 3 ) {
-      price.innerHTML =`выберите ${4-k} пункт`;
+    if (k == 3) {
+      price.innerHTML = `выберите ${4 - k} пункт`;
       price.focus()
 
     }
-    if( k == 0 ) {
-      price.innerHTML =`выберите ${4-k} пункта`;
+    if (k == 0) {
+      price.innerHTML = `выберите ${4 - k} пункта`;
       price.focus()
 
     }
