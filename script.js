@@ -230,21 +230,29 @@ const click1 = (event, item) => {
   }
 
 }
-let count = 0
-window.addEventListener('scroll', function (event) { // событие, которое отслеживает прокрутку
-  let elementWrite1 = document.getElementById('greatingText');
-  let viewElementWrite1 = elementWrite1.getBoundingClientRect();
+// если надо будет при скроле 
+// let count = 0
+// window.addEventListener('scroll', function (event) { // событие, которое отслеживает прокрутку
+//   let elementWrite1 = document.getElementById('greatingText');
+//   let viewElementWrite1 = elementWrite1.getBoundingClientRect();
 
 
-  if (count == 0 && (this.window.innerHeight) / 10 <= viewElementWrite1.top && viewElementWrite1.top <= (this.window.innerHeight)) {
-    count = 1
-    WriteText(' Здравствуйте! Меня зовут Сас Владислав, и я являюсь репетитором по математике и компьютерным наукам. Я помогаю своим ученикам улучшить оценки, подготовиться к экзаменам и поступлению в ведущие вузы страны.', "greatingText", 0)
+//   if (count == 0 && (this.window.innerHeight) / 10 <= viewElementWrite1.top && viewElementWrite1.top <= (this.window.innerHeight)) {
+//     count = 1
+//     WriteText(' Здравствуйте! Меня зовут Сас Владислав, и я являюсь репетитором по математике и компьютерным наукам. Я помогаю своим ученикам улучшить оценки, подготовиться к экзаменам и поступлению в ведущие вузы страны.', "greatingText", 0)
 
-  }
+//   }
 
 
 
-})
+// })
+
+setTimeout(WriteText,1000,' Здравствуйте!', "greatingText1", 0);
+setTimeout(WriteText,2500,'  Меня зовут Сас Владислав, и я являюсь репетитором по математике и компьютерным наукам.', "greatingText2", 0);
+setTimeout(WriteText,6000,'  Я помогаю своим ученикам улучшить оценки, подготовиться к экзаменам и поступлению в ведущие вузы страны.', "greatingText3", 0);
+WriteText('', "greatingText", 0)
+setTimeout(typeWriter, speed);
+WriteText('', "greatingText", 0)
 
 
 
