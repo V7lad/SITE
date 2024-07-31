@@ -199,6 +199,7 @@ p {
 }
 
 .TitleText {
+    margin-bottom: 4vw;
     font-size: 3vw;
     z-index: 100;
 }
@@ -491,7 +492,7 @@ p {
 
 .calculatorItem {
     height: 15vw;
-
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -512,7 +513,7 @@ p {
     position: relative;
     z-index: 0;
     border-radius: 1vw;
-    height: 3vw;
+    min-height: 3vw;
     display: flex;
     align-self: center;
     font-size: 1.3vw;
@@ -524,6 +525,12 @@ p {
 
 }
 
+.mouse{
+    position: absolute;
+    width: 5vw;
+    bottom: -1.5vw;
+    right: -1vw;
+}
 
 .calculatorBtn:before {
     content: '';
@@ -589,12 +596,15 @@ p {
 }
 
 .whyme {
+    text-shadow: 0.1vw 0.3vw 0.9vw #111;
+
     margin-top: 5vw;
     display: flex;
     flex-direction: column;
 }
 
 .whyme1 {
+    position: relative;
     display: flex;
 
     width: 100%;
@@ -602,6 +612,7 @@ p {
 }
 
 .whyme2 {
+    position: relative;
     display: flex;
     height: 24vw;
     width: 100%;
@@ -623,6 +634,8 @@ p {
     flex-direction: column;
     width: 100%;
     z-index: 200;
+    text-shadow: none;
+
 }
 
 .whymeNumbers {
@@ -655,14 +668,20 @@ p {
     font-size: 1.2vw;
 }
 
-.whymeImg {
+.whymeImg1 {
     position: absolute;
-    right: 0;
-
-    width: 60%;
+    right: 3vw;
+    top:-3vw;
+    width: 45vw;
     z-index: 100;
 }
-
+.whymeImg2 {
+    position: absolute;
+    left: 0vw;
+    top:-3vw;
+    width: 40vw;
+    z-index: 100;
+}
 .roundHolder {
     display: flex;
     align-items: row;
@@ -707,7 +726,7 @@ p {
     flex-direction: column;
     align-items: center;
     font-size: 2vw;
-    margin-top: 1vw;
+    
 }
 
 .ask {
@@ -782,6 +801,13 @@ p {
 }
 
 #item7 {
+    display: none;
+    opacity: 0;
+    width: 80%;
+    flex-direction: column;
+    padding-left: 2vw;
+}
+#item8 {
     display: none;
     opacity: 0;
     width: 80%;

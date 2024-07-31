@@ -5,6 +5,7 @@ let item4 = window.document.querySelector('#item4')
 let item5 = window.document.querySelector('#item5')
 let item6 = window.document.querySelector('#item6')
 let item7 = window.document.querySelector('#item7')
+let item8 = window.document.querySelector('#item8')
 
 
 let ask1 = window.document.querySelector('#ask1')
@@ -14,6 +15,7 @@ let ask4 = window.document.querySelector('#ask4')
 let ask5 = window.document.querySelector('#ask5')
 let ask6 = window.document.querySelector('#ask6')
 let ask7 = window.document.querySelector('#ask7')
+let ask8 = window.document.querySelector('#ask8')
 
 let btn1_1 = window.document.querySelector('#calculatorBtn1_1')
 let btn1_2 = window.document.querySelector('#calculatorBtn1_2')
@@ -29,6 +31,8 @@ let btn4_4 = window.document.querySelector('#calculatorBtn4_4')
 let price = window.document.querySelector('#price')
 
 let HelpText = window.document.querySelector('#HelpText')
+
+let mouse = document.getElementById("mouse")
 
 const click1 = (event, item) => {
   console.log(item1.style.display)
@@ -229,31 +233,58 @@ const click1 = (event, item) => {
       ask7.textContent = '+';
     }
   }
+  if (item == 8) {
+    if (item8.style.display == 'none' || item8.style.display == '') {
+      item8.style.display = 'flex';
+      let opacity = 0.3;
+      item8.style.opacity = `${opacity}`;
+      let timerId = setInterval(() => {
+        opacity += 0.05
+        item8.style.opacity = `${opacity}`;
 
+      }, 25);
+      setTimeout(() => { clearInterval(timerId) }, 350);
+
+      ask8.textContent = '-';
+      opacity = 0.3;
+      ask8.style.opacity = `${opacity}`;
+      let timerId2 = setInterval(() => {
+        opacity += 0.05
+        ask8.style.opacity = `${opacity}`;
+
+      }, 25);
+      setTimeout(() => { clearInterval(timerId2) }, 350);
+    }
+    else {
+      item8.style.display = 'none';
+      ask8.textContent = '+';
+    }
+  }
 }
 
-let count = 0
-window.addEventListener('scroll', function (event) { // событие, которое отслеживает прокрутку
-  let elementWrite1 = document.getElementById('HelpText');
-  let viewElementWrite1 = elementWrite1.getBoundingClientRect();
+// let count = 0
+// window.addEventListener('scroll', function (event) { // событие, которое отслеживает прокрутку
+//   let elementWrite1 = document.getElementById('HelpText');
+//   let viewElementWrite1 = elementWrite1.getBoundingClientRect();
 
 
-  if (count == 0 && (this.window.innerHeight) / 10 <= viewElementWrite1.top && viewElementWrite1.top <= (this.window.innerHeight)) {
-    count = 1
-    for (var i = 0; i <=10; i++) {
-      setTimeout(HelpTextVision, i*100);
-  }
-    
-  }
+//   if (count == 0 && (this.window.innerHeight) / 10 <= viewElementWrite1.top && viewElementWrite1.top <= (this.window.innerHeight)) {
+//     count = 1
+//     for (var i = 0; i <= 10; i++) {
+//       setTimeout(HelpTextVision, i * 100);
+//     }
+
+//   }
 
 
 
-})
-let op=0;
-function HelpTextVision (){
+// })
+
+let op = 0;
+function HelpTextVision() {
   let Helptext = document.getElementById('HelpText');
   console.log(Helptext.style.opacity)
-  op+=0.1;
+  op += 0.1;
   Helptext.style.opacity = `${op}`;
 }
 
@@ -437,11 +468,11 @@ function clickCalculatorBtn(id) {
 
   if (b1 != 0 && b2 != 0 && b3 != 0 && b4 != 0) {
     price.innerHTML = '';
-
+    clearInterval(timerId)
 
     // перс дист мат ...
     if (b1 == 1 && b2 == 1 && b3 == 1 && b4 == 1) {
-      WriteText('1000 rub', 'price', 0, 1)
+      WriteText('750 rub', 'price', 0, 1)
       price.focus()
     }
     if (b1 == 1 && b2 == 1 && b3 == 1 && b4 == 2) {
@@ -449,7 +480,7 @@ function clickCalculatorBtn(id) {
       price.focus()
     }
     if (b1 == 1 && b2 == 1 && b3 == 1 && b4 == 3) {
-      WriteText('2500 rub', 'price', 0, 1)
+      WriteText('1500 rub', 'price', 0, 1)
       price.focus()
     }
     if (b1 == 1 && b2 == 1 && b3 == 1 && b4 == 4) {
@@ -458,7 +489,7 @@ function clickCalculatorBtn(id) {
     }
     // перс дист инф ...
     if (b1 == 1 && b2 == 1 && b3 == 2 && b4 == 1) {
-      WriteText('1000 rub', 'price', 0, 1)
+      WriteText('750 rub', 'price', 0, 1)
       price.focus()
     }
     if (b1 == 1 && b2 == 1 && b3 == 2 && b4 == 2) {
@@ -466,7 +497,7 @@ function clickCalculatorBtn(id) {
       price.focus()
     }
     if (b1 == 1 && b2 == 1 && b3 == 2 && b4 == 3) {
-      WriteText('2000 rub', 'price', 0, 1)
+      WriteText('1500 rub', 'price', 0, 1)
       price.focus()
     }
     if (b1 == 1 && b2 == 1 && b3 == 2 && b4 == 4) {
@@ -476,7 +507,7 @@ function clickCalculatorBtn(id) {
 
     // перс очн мат ...
     if (b1 == 1 && b2 == 2 && b3 == 1 && b4 == 1) {
-      WriteText('1100 rub', 'price', 0, 1)
+      WriteText('850 rub', 'price', 0, 1)
       price.focus()
     }
     if (b1 == 1 && b2 == 2 && b3 == 1 && b4 == 2) {
@@ -484,7 +515,7 @@ function clickCalculatorBtn(id) {
       price.focus()
     }
     if (b1 == 1 && b2 == 2 && b3 == 1 && b4 == 3) {
-      WriteText('2600 rub', 'price', 0, 1)
+      WriteText('1600 rub', 'price', 0, 1)
       price.focus()
     }
     if (b1 == 1 && b2 == 2 && b3 == 1 && b4 == 4) {
@@ -493,7 +524,7 @@ function clickCalculatorBtn(id) {
     }
     // перс очн инф ...
     if (b1 == 1 && b2 == 2 && b3 == 2 && b4 == 1) {
-      WriteText('1100 rub', 'price', 0, 1)
+      WriteText('850 rub', 'price', 0, 1)
       price.focus()
     }
     if (b1 == 1 && b2 == 2 && b3 == 2 && b4 == 2) {
@@ -501,7 +532,7 @@ function clickCalculatorBtn(id) {
       price.focus()
     }
     if (b1 == 1 && b2 == 2 && b3 == 2 && b4 == 3) {
-      WriteText('2100 rub', 'price', 0, 1)
+      WriteText('1600 rub', 'price', 0, 1)
       price.focus()
     }
     if (b1 == 1 && b2 == 2 && b3 == 2 && b4 == 4) {
@@ -526,7 +557,7 @@ function clickCalculatorBtn(id) {
       price.focus()
     }
     if (b1 == 2 && b2 == 1 && b3 == 1 && b4 == 4) {
-      WriteText('300', 'price', 0, 1)
+      WriteText('300 rub', 'price', 0, 1)
       price.focus()
     }
     // груп дист инф ...
@@ -543,13 +574,13 @@ function clickCalculatorBtn(id) {
       price.focus()
     }
     if (b1 == 2 && b2 == 1 && b3 == 2 && b4 == 4) {
-      WriteText('300', 'price', 0, 1)
+      WriteText('300 rub', 'price', 0, 1)
       price.focus()
     }
 
     // груп очн мат ...
     if (b1 == 2 && b2 == 2 && b3 == 1 && b4 == 1) {
-      WriteText('450', 'price', 0, 1)
+      WriteText('450 rub', 'price', 0, 1)
       price.focus()
     }
     if (b1 == 2 && b2 == 2 && b3 == 1 && b4 == 2) {
@@ -561,10 +592,10 @@ function clickCalculatorBtn(id) {
       price.focus()
     }
     if (b1 == 2 && b2 == 2 && b3 == 1 && b4 == 4) {
-      WriteText('400', 'price', 0, 1)
+      WriteText('400 rub', 'price', 0, 1)
       price.focus()
     }
-    // гру2 очн инф ...
+    // груп очн инф ...
     if (b1 == 2 && b2 == 2 && b3 == 2 && b4 == 1) {
       WriteText('450 rub', 'price', 0, 1)
       price.focus()
@@ -578,7 +609,7 @@ function clickCalculatorBtn(id) {
       price.focus()
     }
     if (b1 == 2 && b2 == 2 && b3 == 2 && b4 == 4) {
-      WriteText('400', 'price', 0, 1)
+      WriteText('400 rub', 'price', 0, 1)
       price.focus()
     }
   }
@@ -599,23 +630,27 @@ function clickCalculatorBtn(id) {
     }
     if (k == 1) {
       price.innerHTML = `выберите ${4 - k} пункта`;
-      pric2.focus()
-
+      price.focus()
+      clearInterval(timerId)
+      mouse.style.opacity = '0';
     }
     if (k == 2) {
       price.innerHTML = `выберите ${4 - k} пункта`;
       price.focus()
+      clearInterval(timerId)
 
     }
     if (k == 3) {
       price.innerHTML = `выберите ${4 - k} пункт`;
       price.focus()
+      clearInterval(timerId)
 
     }
     if (k == 0) {
       price.innerHTML = `выберите ${4 - k} пункта`;
       price.focus()
-
+      timerId = setInterval(mouseClick, 3000)
+      mouse.style.opacity = '1';
     }
 
   }
@@ -623,8 +658,39 @@ function clickCalculatorBtn(id) {
 
 
 }
+let timerId = setInterval(mouseClick, 3000)
+let img = 0
+function mouseClick() {
 
+  mouse.src = "imgs/mouse2.png";
 
+  setTimeout(() => {
+    mouse.src = "imgs/mouse.png";
+  }, 1000)
+  setTimeout(() => {
+    mouse.src = "imgs/mouse2.png";
+  }, 1300)
+  setTimeout(() => {
+    mouse.src = " ";
+  }, 1800)
+  // if (img == 0) {
+  //   mouse.src = "imgs/mouse2.png";
+  //   console.log(1);
+  //   img = 1;
+  // }
+  // else {
+  //   if (img == 1) {
+  //     mouse.src = "imgs/mouse.png";
+  //     console.log(2);
+  //     img = 2;
+  //   }
+  //   else {
+  //     mouse.src = "";
+  //     console.log(3);
+  //     img = 0;
+  //   }
+  // }
+}
 
 // var i = 0;
 // var txt = 'Lorem ipsum typing effect!'; /* Текст */

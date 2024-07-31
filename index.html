@@ -31,7 +31,7 @@
         </div>
 
         <div class="nav-el">
-            <p>Контакты</p>
+            <p><a href="#cont">Контакты</a></p>
         </div>
 
     </nav>
@@ -66,8 +66,7 @@
            
             
         </div> -->
-        <img src="imgs/llast.png" style="max-height: 93vh; max-width: 100vw;">
-
+        <img src="imgs/llast.22png.png" style="max-height: 93vh; max-width: 100vw;">
 
         <div class="whyme">
             <p class="TitleText"> ПОЧЕМУ ИМЕННО Я?</p>
@@ -79,10 +78,10 @@
                     <p class='whymeTextLow'>Я постоянно обновляю свои знания, и прохожу курсы повышения квалификации,
                         благодаря чему знаю все тонкости экзамена</p>
                 </div>
-                <img class="whymeImg">
+                <img class="whymeImg1" src="imgs/нормсид3.png">
             </div>
             <div class="whyme2">
-
+                <img class="whymeImg2" src="imgs/math.png">
                 <div class="whymeText">
                     <p class="whymeNumbers">02</p>
                     <p class="whymeTitle">Специальная методика подготовки</p>
@@ -135,6 +134,7 @@
             <img src="imgs/нормсид.png" class="aboutMeImg">
         </div>
          -->
+        <img src="imgs/отзывы.png" style="width: 100%; background-color: whitesmok;" id="otziv">
 
         <div class="calculatorHolder" id="calc">
             <!-- <p class="calculatorTitle" >Выберите занятие которое вам подходит !</p> -->
@@ -151,8 +151,8 @@
                 <p class="calculatorText">о</p>
                 <p class="calculatorText">р</p>
             </div> -->
-            <img src="imgs/line.png"  class='line'>
-            <img src="imgs/line2.png"  class='line2'>
+            <img src="imgs/line.png" class='line'>
+            <img src="imgs/line2.png" class='line2'>
 
             <p class="calculatorTitleH"> <strong>Хотите </strong> <i>записаться на занятие</i>, <br> но перед
                 этим <strong>узнать цену? </strong> </p>
@@ -174,6 +174,7 @@
                         <button type="submit" class="calculatorBtn" onclick="clickCalculatorBtn(12)"
                             id='calculatorBtn1_2'>
                             Групповые</button>
+                        <img src="" class="mouse" id="mouse">
                     </div>
                     <div class="calculatorFormat calculatorItem">
                         <button type="submit" class="calculatorBtn" onclick="clickCalculatorBtn(21)"
@@ -243,7 +244,7 @@
             </div>
         </div>
 
-        <img src="imgs/отзывы.png" style="width: 100%" id="otziv">
+
 
         <div class="progect">
             <div class="aboutUs">
@@ -330,14 +331,20 @@
                         Если ученик захочет, он возьмет все, что я ему дам. А если он не захочет, то в лучшем случае
                         заберет половину.</p>
                 </div>
+
+                <button class="ask " onclick="click1(event,8)">Как с вами связаться?<span id="ask8">+</span></button>
+                <div id=item8>
+                    <p class="answer">Мой номер телефона: 8-908-064-39-32.</p>
+                    <p class="answer">Можете позвонить, или написать мне в Viber, WhatsApp, Telegram.</p>
+                </div>
             </div>
 
-            <div class="contacts">
+            <div class="contacts" id="cont">
                 <div class="contactLeft">
                     <p class="TitleText">Свяжитесь со мной любым удобным для вас способом</p>
                     <div class="number">
-                        <p class="answer">телефон: 89080643932</p>
-                        <p class="answer">email: v1ad_ick@mail.ru</p>
+                        <p class="answer" style="font-size: 1.5vw;">телефон: 89080643932</p>
+                        <p class="answer" style="font-size: 1.5vw;">email: v1ad_ick@mail.ru</p>
                     </div>
 
 
