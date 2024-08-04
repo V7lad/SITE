@@ -42,6 +42,7 @@ p {
 
 
 .nav-el {
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -905,6 +906,14 @@ p {
 
 }
 
+.mb {
+    visibility: hidden;
+    position: absolute;
+}
+.pc{
+    visibility: visible;
+    
+}
 @media screen and (max-width: 600px) {
     #whymeText2 {
         width: 100% !important;
@@ -926,22 +935,35 @@ p {
 
     .calculator {
         width: 90vw;
-        
+
     }
-    .calculatorNames{
+
+    .calculatorNames {
         width: 95vw;
-        font-size: 12px;
+        font-size: 10px;
     }
-    .calculatorItem{
+
+    .calculatorItem {
         width: 18vw;
         height: 30vw;
     }
-    .calculatorBtn{
+
+    .calculatorBtn {
         font-size: 12px;
         width: 17vw;
-        margin:1vw 0 ;
-        padding:2px;
-
+        margin: 1vw 0;
+        padding: 2px;
+        height: 5vw;
     }
 
+    #calculatorBtn1_1 {
+        content: '123123322';
+    }
+
+    .mb {
+        visibility: visible;
+    }
+    .pc{visibility: hidden;
+        position: absolute;}
+    .calculatorName{width: 18vw;}
 }
