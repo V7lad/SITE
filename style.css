@@ -214,7 +214,7 @@ p {
 
 .TitleText {
     margin-bottom: 4vw;
-
+    text-align: center;
     font-size: calc(12px + 3vw);
     z-index: 100;
 }
@@ -935,16 +935,13 @@ p {
 @media screen and (max-width: 600px) {
     .ToRight{
         display: flex;
-        flex-direction: row-reverse;
         width: 100%;
-        text-align: end;
     }
     .whyme{
         margin-left: 4vw;
     }
     #whymeText2 {
         width: 100% !important;
-        text-align: end;
         margin-right: 4vw;
     }
 
@@ -1002,4 +999,16 @@ p {
         margin: 5vw;
         margin-bottom: 0;
     } */
+    .repBlock{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .leftCol{
+        width: 100%;
+        margin-bottom: 2vw;
+    }
+    .rigthCol{
+    visibility: hidden; 
+position: absolute;   }
+
 }
