@@ -36,7 +36,8 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-size: 1vw;
+
+    font-size: calc(12px + 1vw);
 }
 
 
@@ -51,7 +52,7 @@ p {
     font-weight: 300;
 }
 
-.sendEmail{
+.sendEmail {
     position: fixed;
     display: flex;
     align-items: center;
@@ -59,6 +60,7 @@ p {
     width: 100%;
     height: 100%;
 }
+
 .layout {
     width: 100%;
     display: flex;
@@ -128,7 +130,7 @@ p {
     margin-top: 3vh;
     width: 10vw;
     height: 5vh;
-    font-size: 0.7vw;
+    font-size: calc(12px + 0.7vw);
     background-color: white;
     border-radius: 2vw;
     cursor: pointer;
@@ -136,7 +138,8 @@ p {
 
 .mainText {
     margin-top: 2vh;
-    font-size: 5vw;
+
+    font-size: calc(12px + 5vw);
     z-index: 200;
     font-weight: 100;
     text-shadow: #111;
@@ -144,7 +147,8 @@ p {
 
 .subText {
     margin-top: 2vh;
-    font-size: 1vw;
+
+    font-size: calc(12px +1vw);
     z-index: 200;
     font-weight: 300;
 }
@@ -191,7 +195,8 @@ p {
     display: flex;
     justify-self: start;
     flex-wrap: wrap;
-    font-size: 2vw;
+
+    font-size: calc(12px + 2vw);
     font-style: italic;
     font-weight: 100;
     line-height: 3vw;
@@ -208,12 +213,14 @@ p {
 
 .TitleText {
     margin-bottom: 4vw;
-    font-size: 3vw;
+
+    font-size: calc(12px + 3vw);
     z-index: 100;
 }
 
 .text {
-    font-size: 1vw;
+
+    font-size: calc(12px + 1vw);
     margin: 1vw;
 }
 
@@ -303,7 +310,8 @@ p {
 
 .itemtitle {
     margin: 1vw;
-    font-size: medium;
+
+    font-size: calc(12px + 0.7vw);
 }
 
 .repBlockHolder {
@@ -330,19 +338,22 @@ p {
 }
 
 .repBlockTitle {
-    font-size: 3vw;
+
+    font-size: calc(12px + 3vw);
     margin-top: 1vw;
 }
 
 .repBlockText {
     margin-top: 1vw;
-    font-size: 1vw;
+    font-size: calc(12px + 1vw);
+
 }
 
 .btnGroup {
     display: flex;
     margin-top: 1vw;
-    font-size: 0.8vw;
+    font-size: calc(5px + 0.8vw);
+
     align-items: center;
 
 }
@@ -353,9 +364,11 @@ p {
     border-radius: 2vw;
     color: white;
     padding: 1vw;
-    font-size: 0.8vw;
+    font-size: calc(12px + 0.8vw);
+
     display: flex;
     justify-items: center;
+    align-items: center;
     margin-right: 2vw;
 }
 
@@ -365,7 +378,8 @@ p {
     justify-content: center;
     flex-direction: column;
     justify-content: space-evenly;
-    font-size: 1.5vw;
+
+    font-size: calc(12px + 1.5vw);
 }
 
 .borderTB {
@@ -421,6 +435,7 @@ p {
 
 .calculatorTitleH {
     margin-top: 1vw;
+
     font-size: 3vw;
     line-height: 4vw;
     text-align: center;
@@ -429,6 +444,7 @@ p {
 
 .calculatorTitleL {
     margin-top: 1vw;
+
     font-size: 1vw;
     line-height: 3vw;
     text-align: justify;
@@ -452,6 +468,7 @@ p {
 .calculatorTitle {
     display: flex;
     align-self: start;
+
     font-size: 2vw;
     margin-bottom: 2vw;
 
@@ -460,17 +477,19 @@ p {
 .line {
     position: absolute;
     right: 14vw;
-    top:5vw;
+    top: 5vw;
     width: 10vw;
 }
+
 .line2 {
     position: absolute;
     left: -2vw;
-    top:3vw;
+    top: 3vw;
     height: 45vw;
 }
 
 .calculatorText {
+
     font-size: 2vw;
 }
 
@@ -483,6 +502,7 @@ p {
     align-items: center;
     position: relative;
     flex-direction: row;
+
     font-size: 2vw;
     font-weight: 300;
     top: 0;
@@ -525,6 +545,7 @@ p {
     display: flex;
     align-self: center;
     font-size: 1.3vw;
+
     font-family: 'Comfortaa', system-ui, sans-serif;
     cursor: pointer;
     display: flex;
@@ -533,7 +554,7 @@ p {
 
 }
 
-.mouse{
+.mouse {
     position: absolute;
     width: 5vw;
     bottom: -1.5vw;
@@ -622,7 +643,6 @@ p {
 .whyme2 {
     position: relative;
     display: flex;
-    height: 24vw;
     width: 100%;
     flex-direction: row-reverse;
 
@@ -648,24 +668,37 @@ p {
 
 .whymeNumbers {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 8vw;
+    font-size: calc(12px + 8vw);
+
     font-weight: 900;
     color: #e2e2e2;
 }
 
 .whymeTitle {
-    font-size: 2.6vw;
+
+    font-size: calc(12px + 2.6vw);
+
 }
 
 .whymeTextHight {
-    font-size: 1.6vw;
+
+    font-size: calc(12px + 1.6vw);
+
 
 }
 
 .whymeTextLow {
     margin-top: 1vw;
+    font-size: calc(12px + 1.2vw);
+    line-height: 4vw;
+    margin-top: 0.5vw;
+}
+
+.whymeText3block {
+    margin-top: 1vw;
     font-size: 1.2vw;
-    line-height: 2vw;
+    line-height: 4vw;
+    margin-top: 0.5vw;
 }
 
 .psTextHolder {
@@ -673,23 +706,27 @@ p {
 }
 
 .psText {
-    font-size: 1.2vw;
+
+    font-size: calc(12px + 1.2vw);
+
 }
 
 .whymeImg1 {
     position: absolute;
     right: 3vw;
-    top:-3vw;
-    width: 45vw;
+    top: -3vw;
+    width: 50vw;
     z-index: 100;
 }
+
 .whymeImg2 {
     position: absolute;
-    left: 0vw;
-    top:-3vw;
+    left: 3vw;
+    top: -3vw;
     width: 40vw;
     z-index: 100;
 }
+
 .roundHolder {
     display: flex;
     align-items: row;
@@ -712,7 +749,9 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 4vw;
+
+    font-size: calc(12px + 4vw);
+
 }
 
 .color1 {
@@ -733,8 +772,9 @@ p {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    font-size: 2vw;
-    
+
+    font-size: calc(12px + 2vw);
+
 }
 
 .ask {
@@ -744,7 +784,8 @@ p {
     width: 80%;
     background-color: #111;
     color: white;
-    font-size: 2vw;
+    font-size: calc(12px + 2vw);
+
     font-family: 'Comfortaa', system-ui, sans-serif;
     border: 1px solid white;
     border-top: 0px solid white;
@@ -754,7 +795,9 @@ p {
 }
 
 .answer {
-    font-size: 1vw;
+
+    font-size: calc(12px + 1vw);
+
     margin: 0.5vw;
     line-height: 35px;
 
@@ -815,6 +858,7 @@ p {
     flex-direction: column;
     padding-left: 2vw;
 }
+
 #item8 {
     display: none;
     opacity: 0;
@@ -828,6 +872,7 @@ p {
     justify-content: center;
     align-items: center;
     margin: 5vw;
+    margin-bottom: 0vw;
 }
 
 .contactLeft {
@@ -835,6 +880,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .contactRight {
@@ -851,6 +897,51 @@ p {
 
 .number {
     display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: space-evenly;
     gap: 2vw;
+    margin-bottom: 5vw;
+
+}
+
+@media screen and (max-width: 600px) {
+    #whymeText2 {
+        width: 100% !important;
+
+    }
+
+    .whymeImg2 {
+        visibility: hidden;
+    }
+
+    .whymeText {
+        gap: 2vw;
+    }
+
+    .whymeImg1 {
+        height: 100%;
+        width: auto;
+    }
+
+    .calculator {
+        width: 90vw;
+        
+    }
+    .calculatorNames{
+        width: 95vw;
+        font-size: 12px;
+    }
+    .calculatorItem{
+        width: 18vw;
+        height: 30vw;
+    }
+    .calculatorBtn{
+        font-size: 12px;
+        width: 17vw;
+        margin:1vw 0 ;
+        padding:2px;
+
+    }
 
 }
