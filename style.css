@@ -929,7 +929,9 @@ p {
 .number{
     font-size: calc(10px + 1.2vw);
     width: 50%;
+    line-height: 5vw;
 }
+
 @media screen and (max-width: 600px) {
     .ToRight{
         display: flex;
