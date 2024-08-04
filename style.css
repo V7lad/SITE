@@ -380,7 +380,7 @@ p {
     flex-direction: column;
     justify-content: space-evenly;
 
-    font-size: calc(12px + 1.5vw);
+    font-size: calc(10px + 1.5vw);
 }
 
 .borderTB {
@@ -641,6 +641,7 @@ p {
     flex-direction: row;
 }
 
+
 .whyme2 {
     position: relative;
     display: flex;
@@ -656,6 +657,9 @@ p {
     flex-direction: column;
     width: 50%;
     z-index: 200;
+}
+.whymeTextPhone{
+    width: 70%;
 }
 
 .whymeTextLast {
@@ -780,19 +784,18 @@ p {
 
 .ask {
     margin: 1vw 0px;
-    display: flex;
     justify-content: space-between;
+    display: flex;
     width: 80%;
     background-color: #111;
     color: white;
     font-size: calc(12px + 2vw);
-
     font-family: 'Comfortaa', system-ui, sans-serif;
     border: 1px solid white;
     border-top: 0px solid white;
     border-right: 0px solid white;
     border-left: 0px solid white;
-
+    text-align: start;
 }
 
 .answer {
@@ -914,10 +917,33 @@ p {
     visibility: visible;
     
 }
+.plus{
+    display: flex;
+    justify-self: end;
+}
+.numbers{
+    margin: 0 5vw;
+    line-height: 2vw;
+    display: flex;
+}
+.number{
+    font-size: calc(10px + 1.2vw);
+    width: 50%;
+}
 @media screen and (max-width: 600px) {
+    .ToRight{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        text-align: end;
+    }
+    .whyme{
+        margin-left: 4vw;
+    }
     #whymeText2 {
         width: 100% !important;
-
+        text-align: end;
+        margin-right: 4vw;
     }
 
     .whymeImg2 {
@@ -925,7 +951,7 @@ p {
     }
 
     .whymeText {
-        gap: 2vw;
+        gap: 3vw;
     }
 
     .whymeImg1 {
@@ -965,5 +991,13 @@ p {
     }
     .pc{visibility: hidden;
         position: absolute;}
+
     .calculatorName{width: 18vw;}
+    .progect{
+        width: 95%;
+    }
+    /* .n{
+        margin: 5vw;
+        margin-bottom: 0;
+    } */
 }
