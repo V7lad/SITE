@@ -176,7 +176,7 @@ p {
 }
 
 .greating {
-    background-color: whitesmoke;
+    background-color: white;
     color: black;
     border-radius: 1vw 5vw 3vw;
     display: flex;
@@ -317,7 +317,7 @@ p {
 
 .repBlockHolder {
     padding-top: 2vw;
-    background-color: whitesmoke;
+    background-color: white;
     width: 100%;
     display: flex;
     align-items: center;
@@ -325,7 +325,7 @@ p {
 }
 
 .repBlock {
-    background-color: whitesmoke;
+    background-color: white;
     color: black;
     display: flex;
     border-radius: 2vw;
@@ -360,7 +360,7 @@ p {
 }
 
 .repBlockBtn {
-    background-color: #111;
+    background-color: rgb(65, 199, 60);
     border: 1px solid white;
     border-radius: 2vw;
     color: white;
@@ -384,13 +384,13 @@ p {
 }
 
 .borderTB {
-    border-bottom: 1px solid #111;
+    border-bottom: 1px solid rgb(65, 199, 60);
     padding: 1vw;
 }
 
 
 .aboutMe {
-    background-color: whitesmoke;
+    background-color: white;
     color: black;
     margin-top: 3vw;
     display: flex;
@@ -413,16 +413,16 @@ p {
     justify-content: space-evenly;
     flex-wrap: wrap;
     flex-direction: row;
-    background-color: whitesmoke;
+    background-color: white;
     border-radius: 1vw;
     color: black;
-    border: 4px solid black;
+    border: 2px solid rgb(65, 199, 60);
 
 }
 
 .calculatorTitleHolder {
     width: 20vw;
-    background-color: whitesmoke;
+    background-color: white;
     position: absolute;
     opacity: 0;
     right: 0;
@@ -435,7 +435,7 @@ p {
 }
 
 .calculatorTitleH {
-    margin-top: 1vw;
+    margin-top: 5vw;
 
     font-size: 3vw;
     line-height: 4vw;
@@ -453,9 +453,9 @@ p {
 
 }
 
-.calculatorHolder {
+.calculatorHolder { 
     position: relative;
-    background-color: whitesmoke;
+    background-color: white;
     align-items: normal;
     color: black;
 
@@ -478,7 +478,7 @@ p {
 .line {
     position: absolute;
     right: 14vw;
-    top: 5vw;
+    top: 7vw;
     width: 10vw;
 }
 
@@ -508,7 +508,8 @@ p {
     font-weight: 300;
     top: 0;
     border-radius: 1vw;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(65, 199, 60);
+    background: #b5f0cd;
 
 }
 
@@ -564,7 +565,7 @@ p {
 
 .calculatorBtn:before {
     content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    background: linear-gradient(45deg,  #ff7300, #fffb00, #48ff00, #00ffd5);
     position: absolute;
     top: -2px;
     left: -2px;
@@ -682,13 +683,13 @@ p {
 .whymeTitle {
 
     font-size: calc(12px + 2.6vw);
-
+    margin-bottom: 2vw;
 }
 
 .whymeTextHight {
 
     font-size: calc(12px + 1.6vw);
-
+    margin-bottom: 2vw;
 
 }
 
